@@ -11,13 +11,34 @@
 <div class="container-wrap">
     <div class="container">
         <div class="contar-wrap">
-            <div class="item">
             {{if .isLogin}}
                 <h4 class="item-title">
                     <p><i class="layui-icon layui-icon-speaker"></i>
                         {{.User.Name}},您已经登陆,是否<a href="/logout"><span>登出</span></a>？
                     </p>
                 </h4>
+                {{if eq .User.Role 0}}
+                    {{/*<h4 class="item-title">*/}}
+                    {{/*<p>*/}}
+                    {{/*<a id="changPwd" href="javacript:void(0);"><i*/}}
+                    {{/*class="layui-icon layui-icon-edit">&#xe642;</i><span>修改密码</span></a>*/}}
+                    {{/*</p>*/}}
+                    {{/*</h4>*/}}
+                    <h4 class="item-title">
+                        <p>
+                            <a href="/note/new"><i class="layui-icon layui-icon-add-1">&#xe654;</i><span>新增文章</span></a>
+                        </p>
+                    </h4>
+                    <h4 class="item-title">
+                        <p>
+                            <label style="width: 120px;">文章编辑器 :</label>
+
+                            <input type="radio" name="editor" value="default" {{if eq .User.Editor "default"}}checked{{end}}  title="富文本">
+                            <span>富文本</span>
+                            <input type="radio" name="editor" value="markdown" {{if eq .User.Editor "markdown"}}checked{{end}} title="Markdown">
+                            <span>Markdown</span>
+                    </h4>
+                {{end}}
             {{else}}
                 <div class="item">
                     <div class="item-box">
@@ -50,7 +71,6 @@
 
                 </div>
             {{end}}
-            </div>
         </div>
     </div>
 </div>

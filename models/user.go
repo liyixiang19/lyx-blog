@@ -1,28 +1,26 @@
 package models
 
-import "github.com/jinzhu/gorm"
-
 type User struct {
-	gorm.Model
-	Name string `gorm:"unique_index"`
-	Email string `gorm:"unique_index"`
-	Pwd string
-	Avatar string
-	Role int // 0代表管理员，1代表普通用户,默认值是1
+	Model
+	Name   string `gorm:"unique_index" json:"name"`
+	Email  string `gorm:"unique_index" json:"email"`
+	Avatar string `json:"avatar"`
+	Pwd    string `json:"-"`
+	Role   int    `gorm:"default:0" json:"role"` // 0 管理员 1正常用户
+	Editor string `json:"editor"`
 }
 
-func QueryByEmailAndPwd(email, pwd string)(user *User, err error)  {
+func QueryByEmailAndPwd(email, pwd string) (user *User, err error) {
 	user = new(User)
-	return user,db.Where("email=? and pwd=?", email,pwd).Take(&user).Error
+	return user, db.Where("email=? and pwd=?", email, pwd).Take(&user).Error
 }
 
-func QueryUserByName(name string) (user *User, err error)  {
+func QueryUserByName(name string) (user *User, err error) {
 	user = new(User)
 	return user, db.Where("name= ?", name).Take(&user).Error
 }
 
-
-func QueryUserByEmail(email string) (user *User, err error)  {
+func QueryUserByEmail(email string) (user *User, err error) {
 	user = new(User)
 	return user, db.Where("email= ?", email).Take(&user).Error
 }

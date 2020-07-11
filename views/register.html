@@ -24,7 +24,7 @@
     </style>
 </head>
 <body class="lay-blog">
-{{template "comm/header.html" .}}
+{{template "comm/header.html".}}
 <div class="container-wrap">
     <div class="container">
         <div class="contar-wrap">
@@ -75,28 +75,12 @@
 </div>
 {{template "comm/footer.html" .}}
 <script>
-    //Demo
-    layui.use(['form','jquery'], function(){
+    layui.use(['form', 'jquery', 'layer', 'sysn'], function () {
         var form = layui.form,
-            $=layui.jquery;
-        //监听提交
-        form.on('submit(reg)', function(rdata){
-            $.post("/reg", rdata.field, function (data) {
-                if (data.code == 0) {
-                    layer.msg("注册成功");
-                    if (data.action) {
-                        setTimeout(function () {
-                            window.location.href = data.action;
-                        }, 300);
-                    }
-                }else {
-                    layer.msg("注册失败:" + data.msg);
-                }
-            },"json").error(function () {
-                layer.msg("网络异常")
-            });
-            return false;
-        });
+            sysn = layui.sysn,
+            $ = layui.jquery,
+            layer = layui.layer;
+
     });
 </script>
 </body>

@@ -12,15 +12,16 @@ const SESSION_USER_KEY = "SESSION_USER_KEY"
 
 type BaseController struct {
 	beego.Controller
-	User models.User
+	User    models.User
 	IsLogin bool
+	Dao     *models.DB
 }
 
 type NestPrepare interface {
 	NextPrepare()
 }
 
-func (this *BaseController) Prepare()  {
+func (this *BaseController) Prepare() {
 	this.Data["Path"] = this.Ctx.Request.RequestURI
 	// 验证用户是否登陆
 	this.IsLogin = false
@@ -32,7 +33,7 @@ func (this *BaseController) Prepare()  {
 	}
 	this.Data["isLogin"] = this.IsLogin
 	//判断子controller是否实现接口 NestPreparer
-	if  a, ok := this.AppController.(NestPrepare); ok {
+	if a, ok := this.AppController.(NestPrepare); ok {
 		a.NextPrepare()
 	}
 }
@@ -42,8 +43,7 @@ func (this *BaseController) Abort500(err error) {
 	this.Abort("500")
 }
 
-
-func (this *BaseController) GetMsgString(key string, msg string)string  {
+func (this *BaseController) GetMsgString(key string, msg string) string {
 	s := this.GetString(key)
 	if len(s) == 0 {
 		this.Abort500(errors.New(msg))
@@ -56,7 +56,6 @@ func (this *BaseController) MustLogin() {
 		this.Abort500(syserrors.NoUserError{})
 	}
 }
-
 
 type H map[string]interface{}
 
@@ -91,8 +90,7 @@ func (this *BaseController) JSONOkH(msg string, maps H) {
 	this.ServeJSON()
 }
 
-
 func (this *BaseController) UUID() string {
-	u :=uuid.NewV4()
+	u := uuid.NewV4()
 	return u.String()
 }

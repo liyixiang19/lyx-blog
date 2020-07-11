@@ -3,6 +3,7 @@ package controllers
 import (
 	"bytes"
 	"errors"
+	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/jinzhu/gorm"
 	"lyx-blog/models"
@@ -13,25 +14,45 @@ type NoteController struct {
 	BaseController
 }
 
-
 ///note
 // @router /new [get]
-func (this *NoteController)Index()  {
+func (this *NoteController) Index() {
 	this.Data["key"] = this.UUID()
 	this.TplName = "note_new.html"
 }
 
 func (this *NoteController) NextPrepare() {
 	this.MustLogin()
-	if this.User.Role  != 0 {
+	if this.User.Role != 0 {
 		this.Abort500(errors.New("权限不足"))
 	}
 }
 
+// @router /edit/:key [get]
+func (this *NoteController) EditPage() {
+	key := this.Ctx.Input.Param(":key")
+	note, err := models.QueryNoteByKeyAndUserId(key, int(this.User.ID))
+	if err != nil {
+		this.Abort500(syserrors.NewError("文章不存在", err))
+	}
+	this.Data["note"] = note
+	this.Data["key"] = key
+	this.TplName = "note_new.html"
 
-///note
+}
+
+// @router /del/:key [post]
+func (this *NoteController) Del() {
+	key := this.Ctx.Input.Param(":key")
+	err := models.DelNoteByUserIDAndKey(key, int(this.User.ID))
+	if err != nil {
+		this.Abort500(syserrors.NewError("删除失败", err))
+	}
+	this.JSONOk("删除成功！", "/")
+}
+
 // @router /save/:key [post]
-func (this *NoteController)Save()  {
+func (this *NoteController) Save() {
 	key := this.Ctx.Input.Param(":key")
 	title := this.GetMsgString("title", "请输入标题")
 	content := this.GetMsgString("content", "请输入内容")
@@ -42,16 +63,16 @@ func (this *NoteController)Save()  {
 		//如果没有该key值的文章
 		if err == gorm.ErrRecordNotFound {
 			n = models.Note{
-				Key: key,
-				Title: title,
+				Key:     key,
+				Title:   title,
 				Content: content,
-				UserID: int(this.User.ID),
-				User: this.User,
+				UserID:  int(this.User.ID),
+				User:    this.User,
 			}
-		}else {
+		} else {
 			this.Abort500(syserrors.NewError("保存失败", err))
 		}
-	}else {
+	} else {
 		//如果有这个文章的记录，修改文章内容
 		note.Title = title
 		note.Content = content
@@ -62,11 +83,9 @@ func (this *NoteController)Save()  {
 	if err = models.SaveNote(&n); err != nil {
 		this.Abort500(syserrors.NewError("保存失败", err))
 	}
-	this.JSONOkH("保存成功", H{})
+	this.JSONOk("保存成功", fmt.Sprintf("/details/%s", key))
 
 }
-
-
 
 func getSummary(content string) (string, error) {
 	var buf bytes.Buffer

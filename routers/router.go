@@ -5,15 +5,26 @@ import (
 	"lyx-blog/controllers"
 )
 
-
 func init() {
 	beego.ErrorController(&controllers.ErrorController{})
-    beego.Include(&controllers.IndexController{})
+	beego.Include(&controllers.IndexController{})
 	beego.Include(&controllers.UserController{})
 	beego.AddNamespace(
 		beego.NewNamespace(
 			"note",
 			beego.NSInclude(&controllers.NoteController{}),
+		),
+		beego.NewNamespace(
+			"message",
+			beego.NSInclude(&controllers.MessageController{}),
+		),
+		beego.NewNamespace(
+			"upload",
+			beego.NSInclude(&controllers.UploadController{}),
+		),
+		beego.NewNamespace(
+			"praise",
+			beego.NSInclude(&controllers.PraiseController{}),
 		),
 	)
 }

@@ -1,0 +1,687 @@
+2020/07/11 13:28:00.388 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 13:30:27.642 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 13:30:39.256 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 0
+2020/07/11 13:30:39.256 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:30:39.258 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     5.0011ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:30:39.288 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/layui/css/layui.css
+2020/07/11 13:30:39.289 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0008ms|   match|[44m GET     [0m /static/css/mian.css
+2020/07/11 13:30:39.359 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      999.7µs|   match|[44m GET     [0m /static/layui/layui.js
+2020/07/11 13:30:39.359 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      999.7µs|   match|[44m GET     [0m /static/images/logo.png
+2020/07/11 13:30:39.359 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/images/logo-text.png
+2020/07/11 13:30:39.404 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 13:30:39.406 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0016ms|   match|[44m GET     [0m /static/layui/font/iconfont.woff
+2020/07/11 13:30:39.420 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      998.5µs|   match|[44m GET     [0m /static/layui/lay/modules/element.js
+2020/07/11 13:30:39.424 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0004ms|   match|[44m GET     [0m /static/layui/lay/modules/jquery.js
+2020/07/11 13:30:39.449 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      998.1µs|   match|[44m GET     [0m /static/layui/lay/modules/form.js
+2020/07/11 13:30:39.475 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/layui/lay/modules/layer.js
+2020/07/11 13:30:39.480 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/layui/css/modules/layer/default/layer.css
+2020/07/11 13:30:39.482 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/layui/lay/modules/laypage.js
+2020/07/11 13:30:39.485 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/layui/lay/modules/laytpl.js
+2020/07/11 13:30:39.489 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|        999µs|   match|[44m GET     [0m /static/js/sysn.js
+2020/07/11 13:30:42.338 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0016ms|   match|[44m GET     [0m /message   r:/message
+2020/07/11 13:30:42.421 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:291.0004msSELECT count(*) FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?))[] 0
+2020/07/11 13:30:42.421 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0004ms|   match|[44m GET     [0m /message/count   r:message/count
+2020/07/11 13:30:43.848 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0018ms|   match|[44m GET     [0m /about   r:/about
+2020/07/11 13:30:45.211 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0009ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:30:50.008 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      998.2µs|   match|[44m GET     [0m /static/layui/css/modules/layer/default/icon.png
+2020/07/11 13:30:52.087 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:16999.7µsSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((email=? and pwd=?)) LIMIT 1[admin@qq.com 123456] 1
+2020/07/11 13:30:52.087 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      999.7µs|   match|[46m POST    [0m /login   r:/login
+2020/07/11 13:30:52.419 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 0
+2020/07/11 13:30:52.419 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:30:52.423 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.9994ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:30:57.042 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0073ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:30:58.089 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0023ms|   match|[44m GET     [0m /note/new   r:note/new
+2020/07/11 13:30:58.109 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0017ms|   match|[44m GET     [0m /static/lib/wangEditor/plus/wangEditor-fullscreen-plugin.css
+2020/07/11 13:30:58.140 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    35.0002ms|   match|[44m GET     [0m /static/lib/wangEditor/wangEditor.js
+2020/07/11 13:31:07.215 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 0
+2020/07/11 13:31:07.218 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:292.0034msUPDATE "users" SET "created_at" = ?, "updated_at" = ?, "deleted_at" = ?, "name" = ?, "email" = ?, "pwd" = ?, "avatar" = ?, "editor" = ?, "role" = ?  WHERE "users"."deleted_at" IS NULL AND "users"."id" = ?[2020-07-11 13:22:22.5863856 +0800 CST 2020-07-11 13:31:07.2168408 +0800 CST m=+39.724870101 <nil> admin admin@qq.com 123456 /static/images/info-img.png  0 1] 1
+2020/07/11 13:31:07.218 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:290sINSERT INTO "notes" ("created_at","updated_at","deleted_at","key","user_id","title","summary","content","source","editor","files") VALUES (?,?,?,?,?,?,?,?,?,?,?)[2020-07-11 13:31:07.2188442 +0800 CST m=+39.726873501 2020-07-11 13:31:07.2188442 +0800 CST m=+39.726873501 <nil> 4a2a8824-5ae7-4bef-ae58-d3f4914fe00c 1 mysql 什么是事务
+
+事务是应用程序中一系列严密的操作，所有操作必须成功完成，否则在每个操作中所作的所有更改都会被撤消。也就是事务具有原子性，一个事务中的一系列的操作要么全部成功，要么一个都不做。
+事务的结束有两种，当事务中的所以步骤全部成功执行时，事务提交。如果其中一个步骤失败，将发生回滚操作，撤消撤消之前到事务开始时的所以操作。
+
+事务的 ACID
+事务具有四个特征：原子性（ Atomicity ）、一致性（ Consistency ）、隔离性（ Isolation ）和持续性（ Durability）。这四个特性简称为 ACID 特性。
+
+1 、原子性。事务是数据库的逻辑工作单位，事务中包含的各操作要么都做，要么都不做
+2 、一致性。事 务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。因此当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态。如果数据库系统 运行中发生... <div><div><h3><strong>什么是事务</strong></h3>
+<blockquote>
+<p>事务是应用程序中一系列严密的操作，所有操作必须成功完成，否则在每个操作中所作的所有更改都会被撤消。也就是事务具有原子性，一个事务中的一系列的操作要么全部成功，要么一个都不做。</p>
+<p>事务的结束有两种，当事务中的所以步骤全部成功执行时，事务提交。如果其中一个步骤失败，将发生回滚操作，撤消撤消之前到事务开始时的所以操作。</p>
+</blockquote>
+<p><strong>事务的 ACID</strong></p>
+<p>事务具有四个特征：原子性（ Atomicity ）、一致性（ Consistency ）、隔离性（ Isolation ）和持续性（ Durability）。这四个特性简称为 ACID 特性。</p>
+<blockquote>
+<p>1 、原子性。事务是数据库的逻辑工作单位，事务中包含的各操作要么都做，要么都不做</p>
+<p>2 、一致性。事 务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。因此当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态。如果数据库系统 运行中发生故障，有些事务尚未完成就被迫中断，这些未完成事务对数据库所做的修改有一部分已写入物理数据库，这时数据库就处于一种不正确的状态，或者说是 不一致的状态。</p>
+<p>3 、隔离性。一个事务的执行不能其它事务干扰。即一个事务内部的操作及使用的数据对其它并发事务是隔离的，并发执行的各个事务之间不能互相干扰。</p>
+<p>4 、持续性。也称永久性，指一个事务一旦提交，它对数据库中的数据的改变就应该是永久性的。接下来的其它操作或故障不应该对其执行结果有任何影响。</p>
+</blockquote>
+<hr>
+<p><strong>Mysql的四种隔离级别</strong></p>
+<p>SQL标准定义了4类隔离级别，包括了一些具体规则，用来限定事务内外的哪些改变是可见的，哪些是不可见的。低级别的隔离级一般支持更高的并发处理，并拥有更低的系统开销。</p>
+<blockquote>
+<p><strong>Read Uncommitted（读取未提交内容）</strong></p>
+<p>在该隔离级别，所有事务都可以看到其他未提交事务的执行结果。本隔离级别很少用于实际应用，因为它的性能也不比其他级别好多少。读取未提交的数据，也被称之为脏读（Dirty Read）。</p>
+<p><strong>Read Committed（读取提交内容）</strong></p>
+<p>这是大多数数据库系统的默认隔离级别（但不是MySQL默认的）。它满足了隔离的简单定义：一个事务只能看见已经提交事务所做的改变。这种隔离级别 也支持所谓的不可重复读（Nonrepeatable Read），因为同一事务的其他实例在该实例处理其间可能会有新的commit，所以同一select可能返回不同结果。</p>
+<p><strong>Repeatable Read（可重读）</strong></p>
+<p>这是MySQL的默认事务隔离级别，它确保同一事务的多个实例在并发读取数据时，会看到同样的数据行。不过理论上，这会导致另一个棘手的问题：幻读 （Phantom Read）。简单的说，幻读指当用户读取某一范围的数据行时，另一个事务又在该范围内插入了新行，当用户再读取该范围的数据行时，会发现有新的“幻影” 行。InnoDB和Falcon存储引擎通过多版本并发控制（MVCC，Multiversion Concurrency Control）机制解决了该问题。</p>
+<p><strong>Serializable（可串行化）</strong></p>
+<p>这是最高的隔离级别，它通过强制事务排序，使之不可能相互冲突，从而解决幻读问题。简言之，它是在每个读的数据行上加上共享锁。在这个级别，可能导致大量的超时现象和锁竞争。</p>
+<p>这四种隔离级别采取不同的锁类型来实现，若读取的是同一个数据的话，就容易发生问题。例如：</p>
+<p>脏读(Drity Read)：某个事务已更新一份数据，另一个事务在此时读取了同一份数据，由于某些原因，前一个RollBack了操作，则后一个事务所读取的数据就会是不正确的。</p>
+<p>不可重复读(Non-repeatable read):在一个事务的两次查询之中数据不一致，这可能是两次查询过程中间插入了一个事务更新的原有的数据。</p>
+<p>幻读(Phantom Read):在一个事务的两次查询中数据笔数不一致，例如有一个事务查询了几列(Row)数据，而另一个事务却在此时插入了新的几列数据，先前的事务在接下来的查询中，就会发现有几列数据是它先前所没有的。</p></blockquote></div><br><br>作者：程序猿天璇<br>链接：https://www.jianshu.com/p/75187e19faf2<br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</div>   ] 1
+2020/07/11 13:31:07.218 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:290sSELECT "visit", "praise" FROM "notes"  WHERE (id = ?)[1] 1
+2020/07/11 13:31:07.224 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     8.9989ms|   match|[46m POST    [0m /note/save/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c   r:note/save/:key
+2020/07/11 13:31:07.555 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:24999.6µsSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 1
+2020/07/11 13:31:07.555 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 0
+2020/07/11 13:31:07.560 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     6.9964ms|   match|[44m GET     [0m /details/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c   r:/details/:key
+2020/07/11 13:31:07.693 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    10.0018ms|   match|[44m GET     [0m /static/layui/lay/modules/util.js
+2020/07/11 13:33:02.753 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 1
+2020/07/11 13:33:02.753 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 0
+2020/07/11 13:33:02.755 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9979ms|   match|[44m GET     [0m /details/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c   r:/details/:key
+2020/07/11 13:34:20.915 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:241.0016msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 1
+2020/07/11 13:34:20.915 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 0
+2020/07/11 13:34:20.917 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0011ms|   match|[44m GET     [0m /details/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c   r:/details/:key
+2020/07/11 13:34:21.003 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/images/info-img.png
+2020/07/11 13:34:51.524 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 1
+2020/07/11 13:34:51.526 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:292.0007msUPDATE "notes" SET "created_at" = ?, "updated_at" = ?, "deleted_at" = ?, "key" = ?, "user_id" = ?, "title" = ?, "summary" = ?, "content" = ?, "source" = ?, "editor" = ?, "files" = ?, "visit" = ?, "praise" = ?  WHERE "notes"."deleted_at" IS NULL AND "notes"."id" = ?[2020-07-11 13:31:07.2188442 +0800 +0800 2020-07-11 13:34:51.5245592 +0800 CST m=+264.032588501 <nil> 4a2a8824-5ae7-4bef-ae58-d3f4914fe00c 1 test01 这是一条测试数据这是一条测试数据 这是一条测试数据这是一条测试数据这是一条测试数据 ... <p>这是一条测试数据</p><p><span style="font-size: 19.2px;">这是一条测试数据</span>&nbsp;</p><p><span style="font-size: 19.2px;">这是一条测试数据</span></p><p><span style="font-size: 19.2px;">这是一条测试数据</span></p><p><span style="font-size: 19.2px;">这是一条测试数据</span>&nbsp;<br></p>    0 0 1] 1
+2020/07/11 13:34:51.532 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     8.9993ms|   match|[46m POST    [0m /note/save/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c   r:note/save/:key
+2020/07/11 13:34:51.846 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:241.0009msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 1
+2020/07/11 13:34:51.846 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[4a2a8824-5ae7-4bef-ae58-d3f4914fe00c] 0
+2020/07/11 13:34:51.848 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9988ms|   match|[44m GET     [0m /details/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c   r:/details/:key
+2020/07/11 13:34:51.941 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 13:34:54.977 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0005msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 1
+2020/07/11 13:34:54.977 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:34:54.979 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0003ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:35:19.110 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 1
+2020/07/11 13:35:19.110 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:35:19.113 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9993ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:35:20.432 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0014ms|   match|[44m GET     [0m /message   r:/message
+2020/07/11 13:35:20.588 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:290sSELECT count(*) FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?))[] 0
+2020/07/11 13:35:20.588 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      999.8µs|   match|[44m GET     [0m /message/count   r:message/count
+2020/07/11 13:35:22.093 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0029msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 1
+2020/07/11 13:35:22.093 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:35:22.095 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0002ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:35:24.051 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      2.001ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:35:24.998 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0002ms|   match|[44m GET     [0m /note/new   r:note/new
+2020/07/11 13:35:40.886 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:241.0002msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 0
+2020/07/11 13:35:40.888 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:291.9988msUPDATE "users" SET "created_at" = ?, "updated_at" = ?, "deleted_at" = ?, "name" = ?, "email" = ?, "pwd" = ?, "avatar" = ?, "editor" = ?, "role" = ?  WHERE "users"."deleted_at" IS NULL AND "users"."id" = ?[2020-07-11 13:22:22.5863856 +0800 CST 2020-07-11 13:35:40.8863825 +0800 CST m=+313.394411801 <nil> admin admin@qq.com 123456 /static/images/info-img.png  0 1] 1
+2020/07/11 13:35:40.888 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:290sINSERT INTO "notes" ("created_at","updated_at","deleted_at","key","user_id","title","summary","content","source","editor","files") VALUES (?,?,?,?,?,?,?,?,?,?,?)[2020-07-11 13:35:40.8883813 +0800 CST m=+313.396410601 2020-07-11 13:35:40.8883813 +0800 CST m=+313.396410601 <nil> 72eb37ed-0b68-413a-8e82-b0b86a64cf3b 1 MySQL事务 什么是事务
+
+事务是应用程序中一系列严密的操作，所有操作必须成功完成，否则在每个操作中所作的所有更改都会被撤消。也就是事务具有原子性，一个事务中的一系列的操作要么全部成功，要么一个都不做。
+事务的结束有两种，当事务中的所以步骤全部成功执行时，事务提交。如果其中一个步骤失败，将发生回滚操作，撤消撤消之前到事务开始时的所以操作。
+
+事务的 ACID
+事务具有四个特征：原子性（ Atomicity ）、一致性（ Consistency ）、隔离性（ Isolation ）和持续性（ Durability）。这四个特性简称为 ACID 特性。
+
+1 、原子性。事务是数据库的逻辑工作单位，事务中包含的各操作要么都做，要么都不做
+2 、一致性。事 务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。因此当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态。如果数据库系统 运行中发生... <div><div><h3><strong>什么是事务</strong></h3>
+<blockquote>
+<p>事务是应用程序中一系列严密的操作，所有操作必须成功完成，否则在每个操作中所作的所有更改都会被撤消。也就是事务具有原子性，一个事务中的一系列的操作要么全部成功，要么一个都不做。</p>
+<p>事务的结束有两种，当事务中的所以步骤全部成功执行时，事务提交。如果其中一个步骤失败，将发生回滚操作，撤消撤消之前到事务开始时的所以操作。</p>
+</blockquote>
+<p><strong>事务的 ACID</strong></p>
+<p>事务具有四个特征：原子性（ Atomicity ）、一致性（ Consistency ）、隔离性（ Isolation ）和持续性（ Durability）。这四个特性简称为 ACID 特性。</p>
+<blockquote>
+<p>1 、原子性。事务是数据库的逻辑工作单位，事务中包含的各操作要么都做，要么都不做</p>
+<p>2 、一致性。事 务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。因此当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态。如果数据库系统 运行中发生故障，有些事务尚未完成就被迫中断，这些未完成事务对数据库所做的修改有一部分已写入物理数据库，这时数据库就处于一种不正确的状态，或者说是 不一致的状态。</p>
+<p>3 、隔离性。一个事务的执行不能其它事务干扰。即一个事务内部的操作及使用的数据对其它并发事务是隔离的，并发执行的各个事务之间不能互相干扰。</p>
+<p>4 、持续性。也称永久性，指一个事务一旦提交，它对数据库中的数据的改变就应该是永久性的。接下来的其它操作或故障不应该对其执行结果有任何影响。</p>
+</blockquote>
+<hr>
+<p><strong>Mysql的四种隔离级别</strong></p>
+<p>SQL标准定义了4类隔离级别，包括了一些具体规则，用来限定事务内外的哪些改变是可见的，哪些是不可见的。低级别的隔离级一般支持更高的并发处理，并拥有更低的系统开销。</p>
+<blockquote>
+<p><strong>Read Uncommitted（读取未提交内容）</strong></p>
+<p>在该隔离级别，所有事务都可以看到其他未提交事务的执行结果。本隔离级别很少用于实际应用，因为它的性能也不比其他级别好多少。读取未提交的数据，也被称之为脏读（Dirty Read）。</p>
+<p><strong>Read Committed（读取提交内容）</strong></p>
+<p>这是大多数数据库系统的默认隔离级别（但不是MySQL默认的）。它满足了隔离的简单定义：一个事务只能看见已经提交事务所做的改变。这种隔离级别 也支持所谓的不可重复读（Nonrepeatable Read），因为同一事务的其他实例在该实例处理其间可能会有新的commit，所以同一select可能返回不同结果。</p>
+<p><strong>Repeatable Read（可重读）</strong></p>
+<p>这是MySQL的默认事务隔离级别，它确保同一事务的多个实例在并发读取数据时，会看到同样的数据行。不过理论上，这会导致另一个棘手的问题：幻读 （Phantom Read）。简单的说，幻读指当用户读取某一范围的数据行时，另一个事务又在该范围内插入了新行，当用户再读取该范围的数据行时，会发现有新的“幻影” 行。InnoDB和Falcon存储引擎通过多版本并发控制（MVCC，Multiversion Concurrency Control）机制解决了该问题。</p>
+<p><strong>Serializable（可串行化）</strong></p>
+<p>这是最高的隔离级别，它通过强制事务排序，使之不可能相互冲突，从而解决幻读问题。简言之，它是在每个读的数据行上加上共享锁。在这个级别，可能导致大量的超时现象和锁竞争。</p>
+<p>这四种隔离级别采取不同的锁类型来实现，若读取的是同一个数据的话，就容易发生问题。例如：</p>
+<p>脏读(Drity Read)：某个事务已更新一份数据，另一个事务在此时读取了同一份数据，由于某些原因，前一个RollBack了操作，则后一个事务所读取的数据就会是不正确的。</p>
+<p>不可重复读(Non-repeatable read):在一个事务的两次查询之中数据不一致，这可能是两次查询过程中间插入了一个事务更新的原有的数据。</p>
+<p>幻读(Phantom Read):在一个事务的两次查询中数据笔数不一致，例如有一个事务查询了几列(Row)数据，而另一个事务却在此时插入了新的几列数据，先前的事务在接下来的查询中，就会发现有几列数据是它先前所没有的。</p></blockquote></div><br><br>作者：程序猿天璇<br>链接：https://www.jianshu.com/p/75187e19faf2<br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</div>   ] 1
+2020/07/11 13:35:40.888 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:290sSELECT "visit", "praise" FROM "notes"  WHERE (id = ?)[2] 1
+2020/07/11 13:35:40.895 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     9.9972ms|   match|[46m POST    [0m /note/save/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:note/save/:key
+2020/07/11 13:35:41.213 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:35:41.213 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 0
+2020/07/11 13:35:41.215 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9949ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:36:03.828 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0035msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:36:03.828 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:36:03.831 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0004ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:36:06.535 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:36:06.535 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:36:06.538 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9993ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:36:08.515 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9994ms|   match|[44m GET     [0m /message   r:/message
+2020/07/11 13:36:08.696 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:290sSELECT count(*) FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?))[] 0
+2020/07/11 13:36:08.696 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /message/count   r:message/count
+2020/07/11 13:36:12.219 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9967ms|   match|[44m GET     [0m /about   r:/about
+2020/07/11 13:36:14.042 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0016ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:36:18.576 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0019ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:36:19.279 [D] [server.go:2807]  |      127.0.0.1|[47m 302 [0m|           0s|   match|[44m GET     [0m /logout   r:/logout
+2020/07/11 13:36:19.284 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:36:19.284 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:36:19.286 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9982ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:36:25.066 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9983ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:36:29.489 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0038ms|   match|[44m GET     [0m /reg   r:/reg
+2020/07/11 13:36:52.028 [E] [value.go:460]  两次输入的密码不一样 两次输入的密码不一样
+2020/07/11 13:36:58.392 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:21999.1µsSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((name= ?)) LIMIT 1[lyx] 0
+2020/07/11 13:36:58.392 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:270sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((email= ?)) LIMIT 1[lyx] 0
+2020/07/11 13:36:58.394 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:311.9988msINSERT INTO "users" ("created_at","updated_at","deleted_at","name","email","pwd","avatar","editor","role") VALUES (?,?,?,?,?,?,?,?,?)[2020-07-11 13:36:58.3922364 +0800 CST m=+390.900265701 2020-07-11 13:36:58.3922364 +0800 CST m=+390.900265701 <nil> lyx lyx@qq.com 123456 /static/images/info-ing.png  1] 1
+2020/07/11 13:36:58.401 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     9.9984ms|   match|[46m POST    [0m /reg   r:/reg
+2020/07/11 13:36:58.720 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0032ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:37:05.774 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:160sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((email=? and pwd=?)) LIMIT 1[lyx@qq.com 123456] 1
+2020/07/11 13:37:05.774 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      998.3µs|   match|[46m POST    [0m /login   r:/login
+2020/07/11 13:37:06.105 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0037msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:37:06.105 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:37:06.111 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     6.9983ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:37:09.241 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      999.1µs| nomatch|[46m POST    [0m /praise//
+2020/07/11 13:37:27.626 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0001ms| nomatch|[46m POST    [0m /praise//
+2020/07/11 13:37:45.043 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:241.0014msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:37:45.043 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 0
+2020/07/11 13:37:45.045 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0008ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:37:49.299 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:37:49.301 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9993ms|   match|[44m GET     [0m /comment/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/comment/:key
+2020/07/11 13:38:02.062 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:252.0001msUPDATE "users" SET "created_at" = ?, "updated_at" = ?, "deleted_at" = ?, "name" = ?, "email" = ?, "pwd" = ?, "avatar" = ?, "editor" = ?, "role" = ?  WHERE "users"."deleted_at" IS NULL AND "users"."id" = ?[2020-07-11 13:36:58.3922364 +0800 CST 2020-07-11 13:38:02.0609204 +0800 CST m=+454.568949701 <nil> lyx lyx@qq.com 123456 /static/images/info-ing.png  1 2] 1
+2020/07/11 13:38:02.062 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:250sINSERT INTO "messages" ("created_at","updated_at","deleted_at","key","user_id","note_key","content") VALUES (?,?,?,?,?,?,?)[2020-07-11 13:38:02.0629205 +0800 CST m=+454.570949801 2020-07-11 13:38:02.0629205 +0800 CST m=+454.570949801 <nil> 1230e80b-1689-45d3-9bfa-c8300b3dcb77 2 72eb37ed-0b68-413a-8e82-b0b86a64cf3b 写的太好了，干货] 1
+2020/07/11 13:38:02.062 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:250sSELECT "praise" FROM "messages"  WHERE (id = ?)[1] 1
+2020/07/11 13:38:02.069 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    10.0017ms|   match|[46m POST    [0m /message/new/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:message/new/?:key
+2020/07/11 13:38:02.410 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:38:02.411 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21999.9µsSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:38:02.411 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 13:38:02.416 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      6.997ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:38:02.442 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     3.0023ms| nomatch|[44m GET     [0m /static/images/info-ing.png
+2020/07/11 13:38:15.211 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0019msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:38:15.211 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:38:15.213 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9995ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:38:25.206 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:38:25.207 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:211.0012msSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:38:25.207 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 13:38:25.209 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0013ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:38:25.232 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     5.0013ms| nomatch|[44m GET     [0m /static/images/info-ing.png
+2020/07/11 13:38:27.550 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 13:38:27.550 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:38:27.550 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:38:27.550 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:38:27.550 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:38:27.550 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:38:27.550 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:38:32.793 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 13:38:32.793 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:38:32.793 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:38:32.793 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:38:32.793 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:38:32.793 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:38:32.793 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:38:34.222 [C] [panic.go:969]  the request url is  /praise/message/1230e80b-1689-45d3-9bfa-c8300b3dcb77
+2020/07/11 13:38:34.222 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:38:34.222 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:38:34.222 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:38:34.222 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:38:34.222 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:38:34.223 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:40:43.848 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 13:41:35.583 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:40999µsSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:41:35.583 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:41:35.585 [D] [controller.go:306]  template Execute err: template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:35.585 [E] [server.go:2807]  template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:35.585 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9983ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:41:44.453 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:40998.8µsSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:41:44.453 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:41:44.454 [D] [controller.go:306]  template Execute err: template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:44.454 [E] [server.go:2807]  template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:44.454 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9999ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:41:48.039 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0006msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:41:48.039 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:41:48.040 [D] [controller.go:306]  template Execute err: template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:48.040 [E] [server.go:2807]  template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:48.040 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0002ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:41:53.686 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0024msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:41:53.686 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:41:53.688 [D] [controller.go:306]  template Execute err: template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:53.688 [E] [server.go:2807]  template: index.html:34:8: executing "index.html" at <lt .page .totpage>: error calling lt: invalid type for comparison
+2020/07/11 13:41:53.688 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0017ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:42:27.387 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0024msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:42:27.387 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:42:27.390 [D] [controller.go:306]  template Execute err: template: index.html:34:8: executing "index.html" at <lt .page .totoalpage>: error calling lt: invalid type for comparison
+2020/07/11 13:42:27.390 [E] [server.go:2807]  template: index.html:34:8: executing "index.html" at <lt .page .totoalpage>: error calling lt: invalid type for comparison
+2020/07/11 13:42:27.390 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9998ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:43:23.074 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0029msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:43:23.074 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:43:23.076 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0037ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:43:23.164 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      999.2µs|   match|[44m GET     [0m /static/js/index.js
+2020/07/11 13:43:23.190 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 13:43:35.845 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:43:35.845 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:43:35.846 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 13:43:35.848 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9993ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:43:35.941 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     3.0019ms| nomatch|[44m GET     [0m /static/images/info-ing.png
+2020/07/11 13:43:40.220 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 13:43:40.220 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:43:40.220 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:43:40.220 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:43:40.220 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:43:40.220 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:43:40.220 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:44:38.322 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0028ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:44:40.205 [D] [server.go:2807]  |      127.0.0.1|[47m 302 [0m|           0s|   match|[44m GET     [0m /logout   r:/logout
+2020/07/11 13:44:40.211 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:44:40.211 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:44:40.214 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9982ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:44:41.574 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0025ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:44:50.764 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:161.001msSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((email=? and pwd=?)) LIMIT 1[admin@qq.com 123456] 1
+2020/07/11 13:44:50.764 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      1.001ms|   match|[46m POST    [0m /login   r:/login
+2020/07/11 13:44:51.082 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:44:51.082 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:44:51.084 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9993ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:44:52.500 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 13:44:52.500 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:44:52.500 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:44:52.500 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:44:52.500 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:44:52.500 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:44:52.501 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:44:56.416 [C] [panic.go:969]  the request url is  /praise/note/4a2a8824-5ae7-4bef-ae58-d3f4914fe00c
+2020/07/11 13:44:56.416 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:44:56.416 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:44:56.416 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:44:56.416 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:44:56.416 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:44:56.417 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:44:57.895 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:44:57.895 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:44:57.896 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21997.6µsSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 13:44:57.898 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9992ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:44:57.921 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     3.0017ms| nomatch|[44m GET     [0m /static/images/info-ing.png
+2020/07/11 13:46:35.383 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 13:46:40.613 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:46:40.614 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21999.9µsSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:46:40.614 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 13:46:40.617 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.9951ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 13:46:40.642 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     3.0014ms| nomatch|[44m GET     [0m /static/images/info-ing.png
+2020/07/11 13:48:09.643 [C] [panic.go:969]  the request url is  /praise/message/1230e80b-1689-45d3-9bfa-c8300b3dcb77
+2020/07/11 13:48:09.643 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:48:09.643 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:48:09.643 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:48:09.643 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:48:09.643 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:48:09.643 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:48:56.582 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 13:48:56.584 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0026ms|   match|[44m GET     [0m /comment/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/comment/:key
+2020/07/11 13:48:56.696 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|      998.7µs|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 13:49:04.191 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 13:49:04.191 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 13:49:04.191 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 13:49:04.191 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 13:49:04.191 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 13:49:04.191 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 13:49:04.191 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 13:57:39.826 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 13:58:00.597 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9993ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:58:00.713 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|     1.0009ms|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 13:58:06.251 [D] [server.go:2807]  |      127.0.0.1|[47m 302 [0m|           0s|   match|[44m GET     [0m /logout   r:/logout
+2020/07/11 13:58:06.257 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0004msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 13:58:06.257 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 13:58:06.259 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9993ms|   match|[44m GET     [0m /     r:/
+2020/07/11 13:58:10.161 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9993ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:58:15.323 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0004ms|   match|[44m GET     [0m /reg   r:/reg
+2020/07/11 13:58:35.386 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((name= ?)) LIMIT 1[lr] 0
+2020/07/11 13:58:35.386 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:270sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((email= ?)) LIMIT 1[lr] 0
+2020/07/11 13:58:35.388 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:311.9994msINSERT INTO "users" ("created_at","updated_at","deleted_at","name","email","pwd","avatar","editor","role") VALUES (?,?,?,?,?,?,?,?,?)[2020-07-11 13:58:35.3868192 +0800 CST m=+55.675580501 2020-07-11 13:58:35.3868192 +0800 CST m=+55.675580501 <nil> lr lr@qq.com 123456 /static/images/info-ing.png  1] 1
+2020/07/11 13:58:35.393 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     8.0001ms|   match|[46m POST    [0m /reg   r:/reg
+2020/07/11 13:58:35.720 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0029ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 13:59:34.293 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 14:03:34.640 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/07/11 14:07:09.065 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0007ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 14:07:09.172 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 14:07:10.013 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0021ms|   match|[44m GET     [0m /user   r:/user
+2020/07/11 14:07:20.765 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/user.go:161.0007msSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND ((email=? and pwd=?)) LIMIT 1[admin@qq.com 123456] 1
+2020/07/11 14:07:20.765 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0007ms|   match|[46m POST    [0m /login   r:/login
+2020/07/11 14:07:21.082 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 14:07:21.083 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:341msSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 14:07:21.084 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9992ms|   match|[44m GET     [0m /     r:/
+2020/07/11 14:07:22.640 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 14:07:22.640 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 14:07:22.640 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 14:07:22.640 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 14:07:22.640 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 14:07:22.640 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 14:07:22.640 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 14:09:26.775 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 14:09:26.775 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 14:09:26.775 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 14:09:26.775 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 14:09:26.775 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 14:09:26.775 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 14:09:26.775 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 14:09:31.854 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 14:09:31.854 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 14:09:31.854 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 14:09:31.854 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 14:09:31.854 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 14:09:31.854 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 14:09:31.854 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 14:09:34.275 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 14:09:34.275 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 14:09:34.278 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0015ms|   match|[44m GET     [0m /     r:/
+2020/07/11 14:10:05.144 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 14:10:05.144 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 14:10:05.144 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 14:10:05.144 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 14:10:05.144 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 14:10:05.144 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 14:10:05.144 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 14:10:05.144 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 14:10:05.144 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 14:10:05.144 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 14:10:05.145 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 14:10:05.145 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 14:10:05.145 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 14:10:05.145 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 14:10:11.768 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 14:10:11.768 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 14:10:11.768 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 14:10:11.768 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 14:10:11.768 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 14:10:11.768 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 14:10:11.768 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 14:10:13.524 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0026msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 14:10:13.524 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 14:10:13.527 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0002ms|   match|[44m GET     [0m /     r:/
+2020/07/11 14:10:27.660 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:10:27.660 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:10:27.661 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21999.1µsSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:10:27.663 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9985ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:13:53.216 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 14:13:53.217 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 14:13:53.219 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0001ms|   match|[44m GET     [0m /     r:/
+2020/07/11 14:13:58.889 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:13:58.889 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:13:58.890 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21999.8µsSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:13:58.892 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9986ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:20:11.149 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:20:11.149 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:20:11.149 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:20:11.152 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9991ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:20:11.262 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|     1.0002ms|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 14:20:40.841 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:20:40.841 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:20:40.842 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:20:40.845 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     5.0013ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:20:44.311 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 14:20:44.311 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 14:20:44.313 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0025ms|   match|[44m GET     [0m /     r:/
+2020/07/11 14:20:45.314 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:20:45.315 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21999.7µsSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:20:45.316 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:211.0018msSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:20:45.317 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      3.001ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:21:01.161 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:440sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((`key` = ? and user_id = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b 1] 1
+2020/07/11 14:21:01.164 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0001ms|   match|[44m GET     [0m /note/edit/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:note/edit/:key
+2020/07/11 14:21:10.179 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 14:21:10.179 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 14:21:10.179 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 14:21:10.179 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 14:21:10.179 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 14:21:10.179 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 14:21:10.180 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 14:22:21.836 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:22:21.837 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:21998.5µsSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:22:21.837 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:22:21.839 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9975ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:22:23.202 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:241.0595msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:22:23.202 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 14:22:23.202 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 14:22:23.205 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.9981ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 14:22:27.334 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|      2.001ms|   match|[44m GET     [0m /message   r:/message
+2020/07/11 14:22:27.512 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:290sSELECT count(*) FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?))[] 0
+2020/07/11 14:22:27.512 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /message/count   r:message/count
+2020/07/11 14:22:34.746 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:252.9988msUPDATE "users" SET "created_at" = ?, "updated_at" = ?, "deleted_at" = ?, "name" = ?, "email" = ?, "avatar" = ?, "pwd" = ?, "role" = ?, "editor" = ?  WHERE "users"."deleted_at" IS NULL AND "users"."id" = ?[2020-07-11 13:22:22.5863856 +0800 CST 2020-07-11 14:22:34.7432939 +0800 CST m=+1140.246698901 <nil> admin admin@qq.com /static/images/info-img.png 123456 0  1] 1
+2020/07/11 14:22:34.746 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:250sINSERT INTO "messages" ("created_at","updated_at","deleted_at","key","user_id","note_key","content") VALUES (?,?,?,?,?,?,?)[2020-07-11 14:22:34.7462927 +0800 CST m=+1140.249697701 2020-07-11 14:22:34.7462927 +0800 CST m=+1140.249697701 <nil> 727c8b41-1224-4f14-8f60-a9322f574d15 1  你好] 1
+2020/07/11 14:22:34.746 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:250sSELECT "praise" FROM "messages"  WHERE (id = ?)[2] 1
+2020/07/11 14:22:34.754 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    12.9994ms|   match|[46m POST    [0m /message/new   r:message/new/?:key
+2020/07/11 14:22:37.097 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9972ms|   match|[44m GET     [0m /about   r:/about
+2020/07/11 14:22:37.802 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0002ms|   match|[44m GET     [0m /message   r:/message
+2020/07/11 14:22:37.954 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:290sSELECT count(*) FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?))[] 0
+2020/07/11 14:22:37.955 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0013ms|   match|[44m GET     [0m /message/count   r:message/count
+2020/07/11 14:22:37.962 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:320sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?)) ORDER BY updated_at desc LIMIT 5 OFFSET 0[] 1
+2020/07/11 14:22:37.962 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:320sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[1] 1
+2020/07/11 14:22:37.962 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0009ms|   match|[44m GET     [0m /message/query   r:message/query
+2020/07/11 14:22:39.846 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0021msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 14:22:39.846 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 14:22:39.847 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0018ms|   match|[44m GET     [0m /     r:/
+2020/07/11 14:22:47.576 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0008ms| nomatch|[46m POST    [0m /praise//
+2020/07/11 14:22:54.430 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.9995ms| nomatch|[46m POST    [0m /praise//
+2020/07/11 14:37:12.083 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0026ms| nomatch|[46m POST    [0m /praise//
+2020/07/11 15:09:47.486 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:40999.1µsSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 15:09:47.486 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 15:09:47.488 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9998ms|   match|[44m GET     [0m /     r:/
+2020/07/11 15:09:47.596 [D] [server.go:2807]  |      127.0.0.1|[47m 304 [0m|     1.0005ms|   match|[44m GET     [0m /static/js/blog.js
+2020/07/11 15:10:00.578 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 15:10:00.578 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 15:10:00.580 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0011ms|   match|[44m GET     [0m /     r:/
+2020/07/11 15:10:01.704 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:401.0015msSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 15:10:01.704 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 15:10:01.706 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0005ms|   match|[44m GET     [0m /     r:/
+2020/07/11 15:14:04.681 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 15:14:04.682 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:341.0006msSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 15:14:04.683 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0002ms|   match|[44m GET     [0m /     r:/
+2020/07/11 15:14:06.445 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:14:06.445 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:14:06.445 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 15:14:06.448 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0015ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 15:14:59.152 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 15:14:59.152 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:14:59.152 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:14:59.152 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:14:59.152 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:14:59.152 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:14:59.152 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 15:18:20.742 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:18:20.742 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:18:20.742 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 15:18:20.745 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     4.0002ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 15:18:24.603 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:400sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?)) ORDER BY updated_at DESC LIMIT 3 OFFSET 0[%%] 2
+2020/07/11 15:18:24.603 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:340sSELECT count(*) FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((title like ?))[%%] 0
+2020/07/11 15:18:24.606 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.9981ms|   match|[44m GET     [0m /     r:/
+2020/07/11 15:18:27.000 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:24983.4µsSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:18:27.000 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:18:27.000 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 15:18:27.002 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9844ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 15:18:42.716 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 15:18:42.716 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:18:42.716 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:18:42.716 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:18:42.716 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:18:42.716 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:18:42.716 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 15:18:47.737 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 15:18:47.737 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:18:47.737 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:18:47.737 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:18:47.737 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:18:47.737 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:18:47.737 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 15:18:49.376 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 15:18:49.376 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:18:49.376 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:18:49.376 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:18:49.376 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:18:49.376 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:18:49.376 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 15:18:50.076 [C] [panic.go:969]  the request url is  /praise/note/72eb37ed-0b68-413a-8e82-b0b86a64cf3b
+2020/07/11 15:18:50.076 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:18:50.076 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:18:50.076 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:18:50.076 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:18:50.076 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:18:50.076 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 15:19:47.738 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/note.go:240sSELECT * FROM "notes"  WHERE "notes"."deleted_at" IS NULL AND ((key = ?)) LIMIT 1[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:19:47.739 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:211.0035msSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ? )) ORDER BY updated_at desc[72eb37ed-0b68-413a-8e82-b0b86a64cf3b] 1
+2020/07/11 15:19:47.739 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:210sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[2] 1
+2020/07/11 15:19:47.741 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0017ms|   match|[44m GET     [0m /details/72eb37ed-0b68-413a-8e82-b0b86a64cf3b   r:/details/:key
+2020/07/11 15:19:49.698 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.9998ms|   match|[44m GET     [0m /message   r:/message
+2020/07/11 15:19:49.883 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:290sSELECT count(*) FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?))[] 0
+2020/07/11 15:19:49.883 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /message/count   r:message/count
+2020/07/11 15:19:49.890 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:320sSELECT * FROM "messages"  WHERE "messages"."deleted_at" IS NULL AND ((note_key = ?)) ORDER BY updated_at desc LIMIT 5 OFFSET 0[] 1
+2020/07/11 15:19:49.890 [main.go:868]  [ORM] sqlD:/Goproject/src/lyx-blog/models/message.go:320sSELECT * FROM "users"  WHERE "users"."deleted_at" IS NULL AND (("id" IN (?)))[1] 1
+2020/07/11 15:19:49.890 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0002ms|   match|[44m GET     [0m /message/query   r:message/query
+2020/07/11 15:19:51.336 [C] [panic.go:969]  the request url is  /praise/message/727c8b41-1224-4f14-8f60-a9322f574d15
+2020/07/11 15:19:51.336 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:19:51.336 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:19:51.336 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:19:51.336 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:19:51.336 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:19:51.337 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/07/11 15:19:51.349 [C] [panic.go:969]  the request url is  /praise/message/727c8b41-1224-4f14-8f60-a9322f574d15
+2020/07/11 15:19:51.349 [C] [panic.go:969]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:969
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/runtime/panic.go:212
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/runtime/signal_windows.go:246
+2020/07/11 15:19:51.349 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/models/core.go:22
+2020/07/11 15:19:51.349 [C] [panic.go:969]  D:/Goproject/src/lyx-blog/controllers/praise.go:25
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/reflect/value.go:460
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/reflect/value.go:321
+2020/07/11 15:19:51.349 [C] [panic.go:969]  D:/Goproject/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:853
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/net/http/server.go:2807
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/net/http/server.go:1895
+2020/07/11 15:19:51.349 [C] [panic.go:969]  C:/Go/src/runtime/asm_amd64.s:1373
+2020/07/11 15:19:51.349 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)

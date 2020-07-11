@@ -33,7 +33,6 @@ func (this *UserController) Logout() {
 	this.Redirect("/", 302)
 }
 
-
 // @router /reg [post]
 func (this *UserController) Reg() {
 	name := this.GetMsgString("name", "昵称不能为空")
@@ -52,11 +51,11 @@ func (this *UserController) Reg() {
 	}
 
 	if err := models.SaveUser(&models.User{
-		Name: name,
-		Email: email,
-		Pwd: password,
-		Avatar: "/static/images/info-ing.png",
-		Role: 1,
+		Name:   name,
+		Email:  email,
+		Pwd:    password,
+		Avatar: "/static/images/info-img.png",
+		Role:   1,
 	}); err != nil {
 		this.Abort500(syserrors.NewError("用户保存失败", err))
 	}
